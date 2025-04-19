@@ -5,6 +5,7 @@
 # Necessary imports
 import os
 import pandas as pd
+import time
 
 # Variables
 years = range(2004, 2025)
@@ -49,7 +50,7 @@ nba_teams = {
 
 # Webscrape from basketball reference
 for year in years:
-    
+
     total_stats = pd.read_html(url1.format(year), header=0, attrs={'id':'totals_stats'})[0]
     advanced_stats = pd.read_html(url2.format(year), header=0, attrs={'id':'advanced'})[0]
     try:
@@ -108,6 +109,9 @@ for year in years:
 
     #Print the progress along the way
     print(f'Season {year-1}-{year} DataFrame has been completed')
+    print('...sleeping...')
+    time.sleep(30)
+    print('...scraping...')
 
 # Save the entire DataFrame to csv file
 df.to_csv('data.csv', index = False)
