@@ -22,9 +22,9 @@ It includes:
 - MVP prediction for the current season (2024-2025)
 
 # Model
-Algorithm - XGBoostRegressor
-Target: MVP vote share (log-transformed)
-Features: VORP, W/L%, USG%, WS/48, PER, Seed
+Algorithm - XGBoostRegressor  
+Target: MVP vote share (log-transformed)  
+Features: VORP, W/L%, USG%, WS/48, PER, Seed  
 
 # How to run
 ```
