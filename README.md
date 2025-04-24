@@ -2,23 +2,24 @@
 This is a data science project that uses NBA mvp and player data from 2004-2024 (20 seasons) to accurately predict who will be awarded mvp this year.
 
 # Project Structure
-.
+```text
+nba-mvp-predictor/
 ├── data/                # 2003-2024 directory to store webscraped files
 ├── model.ipynb          # Thought process and creation of XGBoostRegressor Model
 ├── utilites.py          # File containing huge functions to de-clutter other files
 ├── predict.py           # Final player prediction for 2025
 ├── webscrape.py         # Webscrapes 2003-2024 data from basketball reference
-├── README.md            # This file
-
+└── README.md            # This file
+```
 # Overview
-This project uses XGBoost Regressor to predict MVP vote shares and simulate MVP rankings. 
+This project uses XGBoost Regressor to predict MVP vote shares and simulate MVP rankings.  
 
-It includes:
-Historical MVP data (2004–2024)
-Feature engineering using advanced player stats (e.g. VORP, PER, WS/48)
-Time-series aware cross-validation
-Log Share and probability estimation
-MVP prediction for the current season (2024-2025)
+It includes:  
+- Historical MVP data (2004–2024)
+- Feature engineering using advanced player stats (e.g. VORP, PER, WS/48)
+- Time-series aware cross-validation
+- Log Share and probability estimation
+- MVP prediction for the current season (2024-2025)
 
 # Model
 Algorithm - XGBoostRegressor
@@ -32,7 +33,7 @@ python predict.py
 ```
 
 # Final Prediction
-The Predicted 2025 NBA MVP is Shai Gilgeous-Alexander with a 46.132% chance of winning.
+The Predicted 2025 NBA MVP is **Shai Gilgeous-Alexander** with a **46.132%** chance of winning.
 
 # Features to Improve
 - Better webscraping
