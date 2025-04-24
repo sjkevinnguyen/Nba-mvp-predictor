@@ -17,7 +17,7 @@ except FileExistsError:
     print("Folder %s already exists" % path)
 
 # Seasons = 2003-2024 to 2023-2024
-years = range(2004, 2025)
+years = range(2003, 2025)
 
 for year in years:
     file_path = f"./data/{year}.csv"
@@ -33,7 +33,7 @@ for year in years:
     df['Year'] = year
 
     df.to_csv(file_path, index = False)
-    sleep_time = random.uniform(30, 60)  # Sleep between 2–5 seconds
+    sleep_time = random.uniform(10, 20)  # Sleep between 10-20 secs
     print(f"Sleeping for {sleep_time:.2f} seconds...")
     time.sleep(sleep_time)
 
